@@ -1,0 +1,4 @@
+<!-- IPL2K18_Dashbaord_MatchPoints -->
+<aura:component access="GLOBAL" implements="force:hasRecordId,force:lightningQuickAction,flexipage:availableForAllPageTypes">
+	
+</aura:component>
