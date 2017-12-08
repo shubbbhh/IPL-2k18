@@ -1,14 +1,12 @@
 ({
     setupRadarChart : function(component,message) {
-        if(message.contains('aman'))
-        var action = component.get("c.getDashbaordMatchDetails");
-        if(message == 'porwal')
         var action = component.get("c.getDashbaordMatchDetails");
         action.setCallback(this, function(response){
             var state = response.getState();
-            alert('state'+state);            
+            //alert('state'+state);            
             var jsonRetVal = JSON.parse(response.getReturnValue()); 
-            alert(jsonRetVal.teamNameStr);
+            //alert(jsonRetVal.teamNameStr);
+            //alert(jsonRetVal.teamPointsInt);
             var el = component.find('barChart').getElement();
             var ctx = el.getContext('2d');
             new Chart(ctx, {
